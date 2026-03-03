@@ -32,7 +32,8 @@ This project focuses on automating network observability and alerting within a S
 │   └── sdn_monitor.py  # Telegram alert agent
 └── README.md           # Project documentation
 
-## Quick Start
+## Quick start
+
 1. Clone the repository:
 git clone [https://github.com/duydn4804/Enterprise-SDN-Telemetry-Real-Time-Monitoring-System](https://github.com/duydn4804/Enterprise-SDN-Telemetry-Real-Time-Monitoring-System)
 cd SDN-Telemetry-ChatOps-Lab
