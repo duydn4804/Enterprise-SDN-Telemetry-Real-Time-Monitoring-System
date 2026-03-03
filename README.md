@@ -31,3 +31,21 @@ This project focuses on automating network observability and alerting within a S
 │   ├── sdn_grafana.py  # Push metrics to Prometheus
 │   └── sdn_monitor.py  # Telegram alert agent
 └── README.md           # Project documentation
+
+🚀 Quick Start
+1. Clone the repository:
+git clone [https://github.com/duydn4804/Enterprise-SDN-Telemetry-Real-Time-Monitoring-System](https://github.com/duydn4804/Enterprise-SDN-Telemetry-Real-Time-Monitoring-System)
+cd SDN-Telemetry-ChatOps-Lab
+2. Provision the SDN Controller & Network: (Ensure OpenDaylight Controller is running locally on port 8181 before starting the topology)
+sudo python3 mininet/topology.py
+
+3. Deploy the Observability Stack (Prometheus & Grafana):
+cd monitoring
+docker-compose up -d
+
+4. Run Python Telemetry Agent (Push data to Grafana):
+pip install requests prometheus-client
+python3 python/sdn_grafana.py
+
+5. Run ChatOps Alert Agent (Telegram Bot):
+python3 python/sdn_monitor.py
