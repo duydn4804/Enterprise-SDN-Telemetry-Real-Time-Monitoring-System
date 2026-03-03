@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 3s # Quét liên tục 3 giây/lần giống y hệt code Python của bạn
+
+scrape_configs:
+  - job_name: 'sdn_telemetry'
+    static_configs:
+      - targets: ['localhost:8000'] # Prometheus sẽ gõ cửa cổng 8000 để lấy số liệu băng thông
+
